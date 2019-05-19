@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Aricelle: By Her Wandering Blade</title>
+  <script type="text/javascript">
+    if (screen.width <= 800) {
+      window.location = "http://m.aricelle.com";
+    }
+  </script>
+</head>
+<body onload="currentPage(); arrowNavigation(); clearArray()" onscroll="pageChecker();">
+  <div id="big-body">
+    <div id="rightSideBar"> 
+    </div>
+    <div id="body">
+      <div id="header">
+        <center>ARICELLE: By Her Wandering Blade <b>&&</b> Artificial Time XS</center>
+      </div>
+      <div id="main">
+        <div id="content-1">         
+          <div class="container">
+            <ul>
+              <li class="dropdown">
+                <input type="checkbox" />
+                
+                <a href="#" data-toggle="dropdown">Read the Comic</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" onclick=" selectChapter(1);">Chapter 1: I Am... Aricelle?</a></li>
+                  <li><a href="#" onclick=" selectChapter(2);">Chapter 2: Monkey</a></li>
+                  <li><a href="#" onclick=" selectChapter(3);">Chapter 3: Snake</a></li>
+                  <li><a href="#" onclick=" selectChapter(4);">Chapter 4: Mini-Chapter</a></li>
+                  <li><a href="#" onclick=" selectChapter(5);">Chapter 5: Fox</a></li>
+                  <li><a href="#" onclick=" selectChapter(6);">Chapter 6: Kitsune</a></li>
+                  <li><a href="#" onclick=" selectChapter(7);">Chapter 7: Monkey II</a></li>
+                  <li><a href="#" onclick=" selectChapter(8);">Chapter 8: Cat</a></li>
+                  <li><a href="#" onclick=" selectChapter(9);">Chapter 9: Cat Pt II</a></li>
+                  <li><a href="#" onclick=" selectChapter(10);">Chapter 10: Mini-Chapter 2</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <input type="checkbox" checked="checked" />
+                <a href="#" data-toggle="dropdown">Other Comics & Extras</a>
+                <ul class="dropdown-menu">
+                  <!-- Cast submenu begins -->
+                  <li class="dropdown">
+                    <input type="checkbox" />
+                    <a href="#" data-toggle="dropdown" id="inside">Cast</a>
+                    <ul class="dropdown-menu">
+                      <div id="inside2">
+                        <li><a href="#" onclick="textGenerator('aricelle');"> Aricelle</a></li>
+                        <li><a href="#" onclick="textGenerator('drogo');"> Drogo</a></li>
+                        <li><a href="#" onclick="textGenerator('charlotte');"> Charlotte</a></li>
+                        <li><a href="#" onclick="textGenerator('hongmei');"> Hongmei</a></li>
+                      </div>
+                    </ul>
+                  </li>
+                  <!-- Cast submenu ends -->
+                  <li><a href="#" onclick="textGenerator('faq');">FAQ</a></li>
+                  <li><a href="http://aricelle.com/ats1/ats1.html">Artificial Time XS</a></li>
+                  <li><a href="http://aricelle.com/ats2/ats2.html">Artificial Time S2</a></li>
+                  <li><a href="http://aricelle.com/ats3/ats3.html">Artificial Time S3</a></li>
+                  <li><a href="#" onclick="textGenerator('aboutus');">About Us</a></li>
+                  <li><a href="#" onclick="textGenerator('contact');">Contact</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <input type="checkbox" />
+                <a href="#" data-toggle="dropdown">Support Us</a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://www.patreon.com/raocow">Raocow's Patreon</a></li>
+                  <li><a href="http://fastfoward.tumblr.com">Raocow's Tumblr</a></li>
+                  <li><a href="http://drsunshinesa.tumblr.com">DrSunshine's Tumblr</a></li>
+                  <li><a href="http://talkhaus.raocow.com/viewtopic.php?f=8&amp;t=14393">Forum</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div id="followus">
+            <a href="./rss.xml"><img src = "./assets/rss.gif"/></a>
+          </div>
+        </div>
+        <div id="content-2">
+          <div id="content-2-1">
+            <div id="docDisplay">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
